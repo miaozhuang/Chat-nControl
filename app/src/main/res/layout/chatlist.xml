@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="60dip"
+            android:id="@+id/imageView"
+            android:background="@drawable/menu_bar"
+            android:adjustViewBounds="true" />
+
+        <ImageButton
+            android:layout_width="69dp"
+            android:layout_height="57dp"
+            android:id="@+id/imageButton_add_new_person"
+            android:layout_gravity="right|center_vertical"
+            android:background="@drawable/add_new_person"
+            />
+
+    </FrameLayout>
+
+
+
+    <ListView
+        android:id="@+id/lv"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:fastScrollEnabled="true"
+        />
+</LinearLayout>
